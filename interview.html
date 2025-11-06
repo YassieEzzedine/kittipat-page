@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kittipat / Yassine switch</title>
+<style>
+body{margin:0;font-family:Segoe UI,Arial,Helvetica,sans-serif;background:#0f2027;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:2.5rem 3rem;max-width:650px;box-shadow:0 8px 32px rgba(0,0,0,.3)}
+h1{margin-top:0;font-size:1.8rem;color:#00e5ff}
+a{color:#00e5ff;text-decoration:none}
+a:hover{text-decoration:underline}
+.switch{text-align:right;margin-bottom:1rem}
+.switch button{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:.4rem .8rem;margin-left:.4rem;border-radius:4px;cursor:pointer}
+.switch button:hover{background:rgba(255,255,255,.25)}
+footer{margin-top:2rem;text-align:center;font-size:.8rem;opacity:.7}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="switch">
+<button onclick="show('qen')">Question EN</button>
+<button onclick="show('qfr')">Question FR</button>
+<button onclick="show('aen')">Answer EN</button>
+<button onclick="show('afr')">Answer FR</button>
+</div>
+
+<!-- QUESTION EN -->
+<div id="qen" class="txt">
+<h1>Yassine's Question</h1>
+<p>Hi, I'm Yassine, a student whose graded assignment needs a 5-min text/voice note from a pro pentester: name, role, degree, LinkedIn, 2 tips. No call—just quick reply. Could you help? yassineezzediney2g@gmail.com</p>
+</div>
+
+<!-- QUESTION FR -->
+<div id="qfr" class="txt" style="display:none">
+<h1>Question de Yassine</h1>
+<p>Salut, je suis Yassine, un étudiant dont le devoir noté nécessite une note vocale/texte de 5 min d’un pentester pro : nom, rôle, diplôme, LinkedIn, 2 conseils. Pas d’appel – juste une réponse rapide. Peux-tu aider ? yassineezzediney2g@gmail.com</p>
+</div>
+
+<!-- ANSWER EN -->
+<div id="aen" class="txt" style="display:none">
+<h1>Kittipat's Answer</h1>
+<p>hello I’m Kittipat, 31, Chiang-Mai , a senior pentester at Reconix Security in Thailand<br>
+clients pay us to break their apps & networks before criminals do, then I write ‘please fix this’ reports<br>
+i studied 5 years in Bankok, TH<br>
+this is my certifs CTF panctf ascois<br>
+this is my linkedin url <a href="https://www.linkedin.com/in/kittipat-dechkul-462865172" target="_blank">https://www.linkedin.com/in/kittipat-dechkul-462865172</a><br>
+if i will give you tips i recomend you two things first make your own hacking lab at home second learn how to talk with clients to deliver your exact meaningsclear reports get you hired faster than fancy exploits. Good luck!</p>
+</div>
+
+<!-- ANSWER FR -->
+<div id="afr" class="txt" style="display:none">
+<h1>Réponse de Kittipat</h1>
+<p>bonjour je suis Kittipat, 31 ans, Chiang-Mai, pentester senior chez Reconix Security en Thaïlande<br>
+les clients nous paient pour pirater leurs applis et réseaux avant les criminels, puis je rédige des rapports « merci de corriger ça »<br>
+j’ai étudié 5 ans à Bangkok, TH<br>
+mes certifs : CTF panctf ascois<br>
+mon url linkedin <a href="https://www.linkedin.com/in/kittipat-dechkul-462865172" target="_blank">https://www.linkedin.com/in/kittipat-dechkul-462865172</a><br>
+si je dois te donner des conseils je te recommande deux choses : premièrement crée ton propre labo de hacking à la maison, deuxièmement apprends à parler aux clients pour transmettre tes idées clairement ; des rapports clairs te font embaucher plus vite que des exploits fantaisistes. Bonne chance !</p>
+</div>
+
+<footer>
+<a href="https://drive.google.com/file/d/1YSi1ypvaiv3Bny7k4X58cJaKgdfVml7s/view" target="_blank">Drive</a> |
+<a href="https://github.com/UnkAtreus?tab=repositories" target="_blank">GitHub</a>
+</footer>
+</div>
+
+<script>
+function show(id){
+document.querySelectorAll('.txt').forEach(t=>t.style.display='none');
+document.getElementById(id).style.display='block';
+}
+</script>
+</body>
+</html>
